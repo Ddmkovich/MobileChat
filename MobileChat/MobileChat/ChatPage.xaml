@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileChat.ChatPage"
+             xmlns:local="clr-namespace:MobileChat">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="125"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="125"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Back" Style="{StaticResource buttonStyle}" Clicked="back_Clicked" HorizontalOptions="Start"/>
+                <ImageButton Grid.Column="1" Clicked="search_Clicked" Source="{local:ImageResourceExt MobileChat.Image.srchIcon.png}" HeightRequest="100"/>
+                <Button Grid.Column="2" Text="User info" Style="{StaticResource buttonStyle}" Clicked="change_Clicked" HorizontalOptions="End"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <ListView x:Name="usersList" ItemSelected="usersList_ItemSelected" BackgroundColor="AliceBlue"/>
+        </StackLayout>
+    </Grid>
+   
+   
+    
+</ContentPage>

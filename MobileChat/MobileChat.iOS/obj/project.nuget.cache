@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q+i0nJuQoedzb/8e7B9HNzlx24aT5ExIM/TeJOhjIIDZ/2ow4I+0poOjP4PX1VwJyWw6dAXqZn1CJ87m3jwVwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dmitriy\\source\\repos\\MobileChat\\MobileChat\\MobileChat.iOS\\MobileChat.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dmitriy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Dmitriy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

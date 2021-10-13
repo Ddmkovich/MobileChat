@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\btBack.png" />
+    <None Remove="Image\btClose.png" />
+    <None Remove="Image\changeArr.png" />
+    <None Remove="Image\chatMain.png" />
+    <None Remove="Image\chatMain2.png" />
+    <None Remove="Image\editIcon.png" />
+    <None Remove="Image\extIcon.png" />
+    <None Remove="Image\keyPassw.png" />
+    <None Remove="Image\logChel.png" />
+    <None Remove="Image\personIcon.png" />
+    <None Remove="Image\sendIcon.png" />
+    <None Remove="Image\setgsIcon.png" />
+    <None Remove="Image\srchIcon.png" />
+    <None Remove="logChel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Image\btBack.png" />
+    <EmbeddedResource Include="Image\btClose.png" />
+    <EmbeddedResource Include="Image\changeArr.png" />
+    <EmbeddedResource Include="Image\chatMain.png" />
+    <EmbeddedResource Include="Image\chatMain2.png" />
+    <EmbeddedResource Include="Image\editIcon.png" />
+    <EmbeddedResource Include="Image\extIcon.png" />
+    <EmbeddedResource Include="Image\keyPassw.png" />
+    <EmbeddedResource Include="Image\logChel.png" />
+    <EmbeddedResource Include="Image\personIcon.png" />
+    <EmbeddedResource Include="Image\sendIcon.png" />
+    <EmbeddedResource Include="Image\setgsIcon.png" />
+    <EmbeddedResource Include="Image\srchIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="btBack.png" />
+    <Resource Include="btClose.png" />
+    <Resource Include="changeArr.png" />
+    <Resource Include="chatMain.png" />
+    <Resource Include="chatMain2.png" />
+    <Resource Include="editIcon.png" />
+    <Resource Include="extIcon.png" />
+    <Resource Include="keyPassw.png" />
+    <Resource Include="logChel.png" />
+    <Resource Include="sendIcon.png" />
+    <Resource Include="setgsIcon.png" />
+    <Resource Include="srchIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ChangeInfo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ChatPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MessagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RegistrPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileChat.ChangeInfo"
+             xmlns:local="clr-namespace:MobileChat">
+    <StackLayout Spacing="5">
+        <Button Text="Back" Style="{StaticResource buttonStyle}" Clicked="back_Clicked" HorizontalOptions="Start"/>
+        <Image Grid.Column="1" Source="{local:ImageResourceExt MobileChat.Image.editIcon.png}" HeightRequest="100"/>
+        <Grid Padding="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Entry x:Name="tbNickname" Grid.Column="0" IsEnabled="False" Style="{StaticResource entryStyle}"/>
+            <Button Grid.Column="1" Text="Change nick" Clicked="btChangeNick_Clicked" Style="{StaticResource buttonStyle}" />
+        </Grid>
+        <Entry Placeholder="Actual password" IsPassword="True" Style="{StaticResource entryStyle}"/>
+        <Entry Placeholder="New password" IsPassword="True" Style="{StaticResource entryStyle}"/>
+        <Entry Placeholder="Repeat new password" IsPassword="True" Style="{StaticResource entryStyle}"/>
+        <Button Margin="10,10,10,10" Text="Change Data" Clicked="btChangePassw_Clicked" Style="{StaticResource buttonStyle}"/>
+    </StackLayout>
+    
+</ContentPage>

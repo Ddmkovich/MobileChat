@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileChat.RegistrPage"
+             xmlns:local="clr-namespace:MobileChat">
+    
+    <StackLayout Padding="10,10,10,20" Orientation="Vertical" Spacing="10" VerticalOptions="Center">
+        <Image Source="{local:ImageResourceExt MobileChat.Image.editIcon.png}" HeightRequest="100"/>
+        <Entry x:Name="tbLogin" Placeholder="Nickname" Style="{StaticResource entryStyle}"/>
+        <Entry x:Name="tbPassw" Placeholder="Password" IsPassword="True" Style="{StaticResource entryStyle}"/>
+        <Entry x:Name="tbRepPassw" Placeholder="Repeat password" IsPassword="True" Style="{StaticResource entryStyle}"/>
+        <Button Text="Registration" Clicked="reg_Clicked" Style="{StaticResource buttonStyle}"/>
+    </StackLayout>
+</ContentPage>

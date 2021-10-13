@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileChat.MainPage"
+             xmlns:local="clr-namespace:MobileChat" >
+    
+    <StackLayout Padding="10,10,10,20" Orientation="Vertical" Spacing="10" VerticalOptions="Center">
+
+        <Image Source="{local:ImageResourceExt MobileChat.Image.personIcon.png}" HeightRequest="150"/>
+        <Entry x:Name="tbLogin"  Placeholder="Enter login" Style="{StaticResource entryStyle}" />
+        <Entry x:Name="tbPassword" Placeholder="Enter password" IsPassword="True" Style="{StaticResource entryStyle}"/>
+        <Button Text="Login" Clicked="btnLog_Clicked" Style="{StaticResource buttonStyle}"/>
+        <Button Text="Registration" Clicked="btnReg_Clicked" BackgroundColor="Transparent" FontFamily="NotoSans" FontSize="12"/>
+        
+
+    </StackLayout>
+</ContentPage>
+
